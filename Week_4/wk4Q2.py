@@ -14,28 +14,32 @@ class mathengine:
     def __init__(self, num): 
         self.num = num
 
+
     def add(self,add):
         self.num = self.num + add
         return self.num
 
     def sub(self,sub):
-        #x = int(input("Please enter a number"))
-        ans2 = (x - num)
-        return (ans2)
+        self.num = self.num + sub
+        return self.num
 
     def mult(self,mult):
-        #x = int(input("Please enter a number"))
-        ans3 = (x * num)
-        return (ans3)
+        self.num = self.num + mult
+        return self.num
 
     def div(self,div):
-       # x = int(input("Please enter a number"))
-        ans4 = (x / num)
-        return (ans4)
+        self.num = self.num + div
+        return self.num
+                            
+while True:
+    base = int(input("Please enter a starting number: "))
+    x = int(input("Please enter another number (Enter exit to quit): "))
+    if x == "exit":
+        break
+    else:
 
-
-m_eng = mathengine(45)
-m_eng.add(5)
+        m_eng = mathengine(base)
+        m_eng.add(x)
         
 
 #    def greet_to_file(self,filename):
