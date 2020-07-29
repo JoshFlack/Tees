@@ -10,8 +10,8 @@ import math as ma
 
 
 class mathengine:
-    name = ""
-    def __init__(self, num): 
+    num  = ""
+    def __init__(self, num):
         self.num = num
 
 
@@ -33,22 +33,12 @@ class mathengine:
                             
 while True:
     base = int(input("Please enter a starting number: "))
-    x = int(input("Please enter another number (Enter exit to quit): "))
+    x = input("Please enter another number (Enter exit to quit): ")
     if x == "exit":
         break
     else:
-
         m_eng = mathengine(base)
-        m_eng.add(x)
-        
+        print (m_eng.add(int(x)))
 
-#    def greet_to_file(self,filename):
-#        with open(filename, 'w') as file: 
-#            file.write("hello" + self.name)
-        
+print ("Thanks for playing")
 
-#greeter = Greeter("Josh")
-
-#greeter.greet_to_file("hi.txt")
-
-#greeter.greet_to_screen()
