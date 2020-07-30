@@ -11,12 +11,14 @@ import math as ma
 
 def blocked():
     with open("blocked_words.txt", mode="r") as my_file:
-         for line in my_file:
-             blocked_words = []
+        blocked_words = []
+        for line in my_file:
+             blocked_words.append(line.strip())
+             return blocked_words
 
 while True:
 
-    url = input("Enter address to scan: (enter Exit to quit")
+    url = input("Enter address to scan: (enter Exit to quit)")
     response = urldl.urlopen(url)
     if url == "Exit":
         break
@@ -24,12 +26,15 @@ while True:
 
     data = response.read()
     txt = data.decode().lower()
+    blocked_words = blocked()
 
-    if blocked_words in txt:
-        print ("This bage is blocked ")
+    for line in blocked_words:
 
-    else:
-        ("This page is ok to look at")
-        
+        if blocked_words in txt:
+            print ("This bage is blocked ")
+
+        else:
+            ("This page is ok to look at")
+            
 
     
