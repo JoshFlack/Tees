@@ -14,7 +14,8 @@ def blocked():
         blocked_words = []
         for line in my_file:
              blocked_words.append(line.strip())
-             return blocked_words
+
+    return blocked_words
 
 while True:
 
@@ -30,11 +31,12 @@ while True:
 
     for line in blocked_words:
 
-        if blocked_words in txt:
+        if line in txt:
             print ("This bage is blocked ")
 
         else:
             ("This page is ok to look at")
             
 
+print ("Thank you for using this really useful py ")
     
