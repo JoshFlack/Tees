@@ -18,7 +18,7 @@ while True:
 
     url = input("Enter address to scan: (enter Exit to quit")
     response = urldl.urlopen(url)
-    if url == Exit:
+    if url == "Exit":
         break
         
 
