@@ -1,3 +1,6 @@
+#Josh Flack
+#24/8/2020
+#Ellipse
 
 # ask for radius input for calculation
 r1 = input ( "please enter the major axis radius: ")

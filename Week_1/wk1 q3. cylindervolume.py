@@ -1,3 +1,9 @@
+#Josh Flack
+#24/8/2020
+#Volume of a Cylinder
+
+
+
 #input and details for formula
 r = input ("please input the radius of the cylinder ")
 pi = 3.141

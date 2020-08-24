@@ -1,3 +1,7 @@
+#Josh Flack
+#24/8/2020
+#barchar graph
+
 import matplotlib.pyplot as plt
 from random import randint
 import random as ran

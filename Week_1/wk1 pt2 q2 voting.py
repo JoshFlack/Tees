@@ -4,9 +4,9 @@
 
 #requestin input from user
 name = input ("please enter your name: ")
-age = (int (input("please enter your age: ")))
+age = (int (input("please enter your age: "))) #cast input straight away
 cont = input ("please enter your country or citizenship: ")
-Allowed = "Britain"
+Allowed = "Britain" #specifying which country it allowed
 
 #nest condition to estabilish if they can vote.
 if age > 18 and cont == Allowed:

@@ -1,3 +1,7 @@
+#Josh Flack
+#24/8/2020
+#Volume of the house
+
 
 #Data gathering for all rooms
 r1w = input ("please enter the width of room 1: ")

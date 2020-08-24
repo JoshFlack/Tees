@@ -1,6 +1,6 @@
 #Josh Flack
 #Date
-#Name of proram
+#url downloads
 
 import urllib.request as urldl
 import matplotlib.pyplot as plt

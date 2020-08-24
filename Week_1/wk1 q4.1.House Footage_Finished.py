@@ -1,3 +1,7 @@
+#Josh Flack
+#24/8/2020
+#Square footage of house
+
 
 #Data gathering for all rooms
 r1w = input ("please enter the width of room 1: ")
@@ -31,9 +35,10 @@ Area2 = r2w*r2l
 Area3 = r3w*r3l
 Area4 = r4w*r4l
 
+#Print the areas for each of the rooms
 print ("The areas for the room 1 is: ", Area1)
 print ("The areas for the room 2 is: ", Area2)
 print ("The areas for the room 3 is: ", Area3)
 print ("The areas for the room 4 is: ", Area4)
-
+#print the overal area for the house
 print ("The area for the house is: ", Area1+Area2+Area3+Area4) 

@@ -5,24 +5,38 @@
 import math as m
 
 
-def sphere(r):
-    return ((4/3) * m.pi * (r**3))
+def sphere(rad):
+    return ((4/3) * m.pi * (rad**3))
 
-def cone (r,h):
-    return ((1/3) * m.pi * (r**2) * h)
+def cone (rad,h):
+    answer = ((1/3) * m.pi * (rad**2) * h)
+    return answer 
 
-def cylinder (r,h):
-    return (m.pi * ((r**2) * h))
+def cylinder (rad,h):
+    return (m.pi * ((rad**2) * h))
 
-def print_answer (r,h):
-    ans_2 = cylinder (r,h)
-    ans_3 = cone (r,h)
-    if Q == 2:
-        print (ans_2)
 
-    elif Q == 3:
-        print (ans_3) 
-    
+
+rad = float (input ("Please enter the radius of the object you have: "))    
+Q = int (input (" Please enter 1 if it is a sphere, 2 if it is a cylinder, or 3 if it is a cone"))  
+
+
+
+if  Q == 2:
+    h = float (input ("Please enter the height: "))
+    cylinder (rad,h)
+
+if Q == 3:
+    h = float (input ("Please enter the height: "))
+    cone(rad,h)
+
+elif Q == 1:
+    print_answer_sphe (rad)
+
+
+
+
+
 
 #def print_answer_sphe (r):
 #    ans = sphere (r)
@@ -35,20 +49,3 @@ def print_answer (r,h):
 #def print_answer_cyl (r,h):
 #    ans = cylinder (r,h)
 #    print ("The answer is: ", ans)
-
-    
-rad = float (input ("Please enter the radius of the object you have: "))
-Q = int (input (" Please enter 1 if it is a sphere, 2 if it is a cylinder, or 3 if it is a cone"))
-
-if (Q == 2 or Q == 3):
-    h = float (input ("Please enter the height: "))
-    print_answer (rad, h)
-#elif (Q == 3):
-#    h = float (input ("Please enter the height: "))
-#    print_answer_cone
-
-elif Q == 1:
-    print_answer_sphe (rad)
-
-
-

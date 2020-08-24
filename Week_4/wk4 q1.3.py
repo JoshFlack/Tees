@@ -15,10 +15,11 @@ class Greeter:
         self.name = name
     def greet_to_screen(self): 
         print("Hello,", self.name)
-    def greet_to_file(self):
-        with open (filename, mode='w') as my_file:
+    def greet_to_file(self): #opening and appending a file
+        with open (filename, mode='a') as my_file:
+            
         
 
 greeter = Greeter("Fred")
 greeter.greet_to_screen()
-greeter.greet_to_file("hi.txt")
+greeter.greet_to_file("hi.txt")#write the greeting to txt file hi.txt

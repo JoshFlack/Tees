@@ -1,3 +1,7 @@
+#Josh Flack
+#24/8/2020
+#Temperature Conversion c - f
+
 c = input ("please enter the temperatuyre in celsius: ") #input temp in celcius
 
 c = float(c) #convert to a float

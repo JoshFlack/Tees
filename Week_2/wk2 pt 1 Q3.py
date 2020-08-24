@@ -1,6 +1,7 @@
-# Student marks data file (do not modify!)
-# Pete Dwyer 01/11/17
-# Saul Johnson 28/04/2020
+#Josh Flack
+#24/8/2020
+#Grading list 
+
 
 data = [ "Fozzie", 34, \
          "Kermit", 78, \
@@ -39,29 +40,29 @@ while i < len(data):
     i +=2 #add 2 to the counter to move onto the next persons info
     clean_data.append(person)
 
+#grad marks
+
 fal = 39
 pas = 40
 mer = 60
 dis = 70
 
-Fail = list(filter(lambda x: x["grade"] < pas, clean_data))
-print ("These people failed", Fail)
+Fail = list(filter(lambda x: x["grade"] < pas, clean_data)) #filter list for people who failed or did not hand in
+print ("These people failed", Fail) #print the filtered list
 
-Pass = list(filter(lambda x: x["grade"] > pas and x["grade"] < mer, clean_data))
-print ("These people graded a pass", Pass)
+Pass = list(filter(lambda x: x["grade"] > pas and x["grade"] < mer, clean_data)) #filter list for pass grades
+print ("These people graded a pass", Pass) #print the filter list
 
-Merit = list(filter(lambda x: x["grade"] > mer and x["grade"] < dis, clean_data))
-print ("These people graded a Merit grade", Merit)
+Merit = list(filter(lambda x: x["grade"] > mer and x["grade"] < dis, clean_data)) #filters list for merit grades
+print ("These people graded a Merit grade", Merit) #print the filtered list
 
-Distinction = list(filter(lambda x: x["grade"] > dis, clean_data))
-print ("These people graded a Distinction grade", Distinction)
-
-
-print ("This person had the top grade", (max(clean_data, key=lambda x: x["grade"])))
+Distinction = list(filter(lambda x: x["grade"] > dis, clean_data)) #filter the list for distinction grades
+print ("These people graded a Distinction grade", Distinction) #print the filtered list
 
 
+print ("This person had the top grade", (max(clean_data, key=lambda x: x["grade"]))) #This filters through and gives the highest grade
 
-#print (clean_data)
+
 
 
   
